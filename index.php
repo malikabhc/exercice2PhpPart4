@@ -1,3 +1,9 @@
+<?php
+//Déclaration d'une fonction qui retourne une chaîne de caractères passer en paramètres
+function st($text){
+  return $text;
+}
+?>
 <!DOCTYPE html>
 <html lang="fr">
   <head>
@@ -6,12 +12,7 @@
   </head>
   <body>
     <p>
-      <?php
-        function st($text){
-          return $text;
-        }
-        echo st('Bonjour');
-      ?>
+      <?= st('Bonjour'); // Affichage du retour de la fonction et on donne une valeur à son paramètre ?>
     </p>
   </body>
 </html>
